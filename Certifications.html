@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@100;200;300;400;600;700&family=Proza+Libre&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="styleC.css">
+        <title>Hazem</title>
+        <script src="https://kit.fontawesome.com/1ce8eaf46e.js" crossorigin="anonymous"></script> 
+    </head>
+    </html>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Certifications.html">Certifications</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Certifications</h1>
+            <p>This is sample of certifications i've got</p>
+            <a href="" class="hero-btn">Explore</a>
+        </div>
+        </section>
+        
+        <section class="stC">
+            <h1><a href="https://www.life-global.org/" target="_blank"><span>HP Life</span></a> Certifications</h1>
+            <img src="images/HP - Presentations.jpg">
+            <img src="images/HP - selling.jpg">
+            <img src="images/HP - Presenting Data.jpg">
+            <h1><a href="https://www.life-global.org/" target="_blank"><span>Udemy</span></a> Certifications</h1>
+            <img src="images/Udemy - Amazon Elastic Compute Cloud_page-0001.jpg">
+            <img src="images/UC-9f16d8d8-bec0-45bc-afb1-d4ec015e67b2_page-0001.jpg">
+        </section>
+        <!-- js for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="footL"><h2> <i class='fa fa-mail-forward'></i>&nbsp;&nbsp;&nbsp;Get In Touch</h2>
+            <p>Follow the following links to get in touch with me let me know your opinion about this site </p>
+        </div>
+        <div class="footM">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+            <div class="footR">
+                <div class="icons">
+                    <a href="https://www.facebook.com/HazemMohamed1577"target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="https://twitter.com/HazzemMuhammed"target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#search/hazzemmuhammed%40gmail.com?compose=new"target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.instagram.com/hazem.mohamed1577/"target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hazem-mohamed-44860a253/"target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Hazzemm"target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="rights" style="color:white;">
+                    <h4>All rights reserved</h4>
+                    <p style="color:white">The Whole Website Designed By Hazem</p>
+                </div>
+            </div>
+    </footer>
+</html>

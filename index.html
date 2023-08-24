@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@100;200;300;400;600;700&family=Proza+Libre&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Hazem</title>
+        <script src="https://kit.fontawesome.com/1ce8eaf46e.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Certifications.html">Certifications</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="text-box">
+            <h1>Welcome,<br> To My Humble <br>Website</h1>
+            <p>It's Hazem, This is considered to be my first complete website<br> and i will introduce my self here •<br> my personal information, skills, hobbies and interests<br>Inform me that you visited this site  </p>
+            <a href="" class="hero-btn">Inform Me</a>
+        </div>
+        </section>
+
+        <!-- --------------------------------------------- -->
+
+        <section class="personalInfo">
+            <h1>Personal Informations</h1>
+            <p>this will be a quick brief about me</p>
+            <div class="row">
+                <div class="info-col">
+                    <h3>Basics</h3>
+                    <p>This is Hazem Mohamed, at the age of twenty one "21" my birthdate is 10/15/2001 hope you don't forget to bring me something usefull ._.</p>
+                </div>
+                <div class="info-col">
+                    <h3>Educational Status</h3>
+                    <p>I'm currently a student at the Faculty of Computer Science and Information Technology "CS" Department and trying to specialize as a backend developer</p>
+                </div>
+                <div class="info-col">
+                    <h3>Nothing at all</h3>
+                    <p>I just added this box to enhance the layout but i have no idea what to write in it ... so you know, just keep scrolling, Oh wait i think i can write my fav food here if i have nothing else, but it is too late now</p>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------ -->
+        <section class="skills">
+            <h1>My Personal Skills</h1>
+            <p>I doubt i have any skill, anyway i'm a Graphic Designer and gonna show you some of my work <br>let's take a look first on what i can use</p>
+            <div class="row2">
+                <div class="info-col2">
+                    <h3>FrontEnd</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>Designing</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>PhotoShop</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>MongoDB</h3>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="info-col2">
+                    <h3>NodeJS</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>ExpressJS</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="info-col2">
+                    <h3>C++</h3>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------------------------------------- -->
+            <hr>
+            <section class="hobbies">
+                <h1>Let's dive into the fun part</h1>
+                <p>My favourite serieses , anime and games </p>
+                <h4> <span>Games</span> | <span>Serieses</span> | <span>Anime</span></h4>
+                <div class="row">
+                    <div class="hob-col">
+                        <img src="images/sekiro.jpg">
+                        <div class="layer">
+                            <h3>Sekiro</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/AC.jpg">
+                        <div class="layer">
+                            <h3>Assassin's Creed</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/itachi.jpg">
+                        <div class="layer">
+                            <h3>Naruto</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/aot.jpg">
+                        <div class="layer">
+                            <h3>Attack On Titan</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="hob-col">
+                        <img src="images/hxh.jpg">
+                        <div class="layer">
+                            <h3>HXH</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/BB.jpg">
+                        <div class="layer">
+                            <h3>Breaking Bad</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/Vikings.jpg">
+                        <div class="layer">
+                            <h3>Vikings</h3>
+                        </div>
+                    </div>
+                    <div class="hob-col">
+                        <img src="images/val.jpg">
+                        <div class="layer">
+                            <h3>Riot games</h3>
+                        </div>
+                        <img src="images/League of legends.jpg">
+                        <div class="layer">
+                            <h3>RiotGames</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- js for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+    <footer>
+        <div class="footL"><h2> <i class='fa fa-mail-forward'></i>&nbsp;&nbsp;&nbsp;Get In Touch</h2>
+            <p>Follow the following links to get in touch with me let me know your opinion about this site </p>
+        </div>
+        <div class="footM">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+            <div class="footR">
+                <div class="icons">
+                    <a href="https://www.facebook.com/HazemMohamed1577"target="_blank"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="https://twitter.com/HazzemMuhammed"target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#search/hazzemmuhammed%40gmail.com?compose=new"target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.instagram.com/hazem.mohamed1577/"target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hazem-mohamed-44860a253/"target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Hazzemm"target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="rights" style="color:white;">
+                    <h4>All rights reserved</h4>
+                    <p style="color:white">The Whole Website Designed By Hazem</p>
+                </div>
+            </div>
+    </footer>
+</html>

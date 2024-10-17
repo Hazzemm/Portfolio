@@ -7,7 +7,6 @@
     list-style: none;
     text-decoration: none;
     color: white;
-    overflow-x: hidden;
 }
 .menuBox{
     display: none;
@@ -157,9 +156,6 @@ button:hover{
     } 
 }
 @media(max-width:580px){
-    *{
-        overflow-x: hidden;
-    }
     body{
         overflow-x: hidden;
     }
@@ -189,7 +185,8 @@ button:hover{
     .nav {
         position: absolute;
         top: 50px;
-        right: -200px;
+        right: 0px;
+        width: 50%;
         align-items: center;
         display: none;
     }

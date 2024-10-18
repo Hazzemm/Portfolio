@@ -135,7 +135,7 @@ button:hover{
 }
 @keyframes glitch {
     0%, 100% {
-        background: url(./hazem.jpg);
+        background: url(./images/hazem.jpg);
         background-size: cover;
     } 
     91% {

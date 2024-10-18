@@ -80,7 +80,7 @@ i:hover{
     line-height: 1;
 }
 .mid >.content > h1:hover{
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 0.5px #fff;
     color: transparent;
 }
 .mid >.content> h3 {

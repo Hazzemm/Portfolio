@@ -1,16 +1,24 @@
-document.getElementById('menuIcon').addEventListener('click', function() {
-    var navbar = document.getElementById('navbar');
-    var menuIcon = document.getElementById('menuI');
-
-    if (navbar.style.display === 'block') {
-        navbar.style.display = 'none'; // Hide the navbar
-        menuIcon.style.color = 'white'; // Set menu icon color to white
-    } else {
-        navbar.style.display = 'block'; // Show the navbar
-        menuIcon.style.color = 'rgb(10, 188, 129)'; // Set menu icon color to green
+const menuIcon = document.getElementById('menuI');
+const nav = document.querySelector('.nav');
+menuIcon.addEventListener('click', function() {
+    if (nav.style.display === 'none' || nav.style.display === '') {
+        nav.style.display = 'block'; 
+        menuIcon.style.color = 'rgb(10, 188, 129)';
+    } 
+    else {
+        nav.style.display = 'none'; 
+        menuIcon.style.color = 'white'; 
     }
 });
 
+// Handle window resizing
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 580) {
+    nav.style.display = 'flex'; 
+  } else {
+    nav.style.display = 'none';
+  }
+});
 
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz/?.>,<'\";:[{}]|^█████████"; // Define the letters array
@@ -61,7 +69,7 @@ function applyEffectOnLoad(element) {
 window.onload = () => {
     const h1Element = document.querySelector(".mid >.content > h1");
     if (h1Element) {
-        h1Element.dataset.value = h1Element.innerText; // Store the original text in data-value
-        applyEffectOnLoad(h1Element); // Apply the effect
+        h1Element.dataset.value = h1Element.innerText;
+        applyEffectOnLoad(h1Element);
     }
 };

@@ -13,7 +13,7 @@ menuIcon.addEventListener('click', function() {
 
 // Handle window resizing
 window.addEventListener('resize', function() {
-  if (window.innerWidth > 580) {
+  if (window.innerWidth > 680) {
     nav.style.display = 'flex'; 
   } else {
     nav.style.display = 'none';

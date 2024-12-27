@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Saira+Stencil+One&family=Teko:wght@300..700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -20,7 +21,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
 }
 ul {
     display: flex;
@@ -78,9 +78,11 @@ i:hover{
     padding: 30px;
 }
 .mid >.content > h1{
+    user-select:text;
     font-size: 65px;
     font-weight: 800;
     line-height: 1;
+    letter-spacing: 0.2mm;
 }
 .mid >.content > h1:hover{
     -webkit-text-stroke: 0.5px #fff;
@@ -89,8 +91,10 @@ i:hover{
 .mid >.content> h3 {
     font-size: 20px;
     margin: 10px 0px;
+    user-select:text;
 }
 .mid >.content> p {
+    user-select:text;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -105,6 +109,7 @@ button{
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
+    cursor: pointer;
 }
 button:hover{
     background-position: left bottom;
@@ -137,7 +142,8 @@ button:hover{
     border: 10px solid #fff;
 }
 .section2{
-    margin-top: 30px;
+    user-select:text;
+    margin-top: 10px;
     background: linear-gradient(to right bottom, #08a470,#03563b);
 }
 .section2 > p{
@@ -146,11 +152,10 @@ button:hover{
     font-size: 14px;
     line-height: 1.5;
 }
-hr{
+.up{
     width: 30%;
-    border: 2px solid;
     color: #fff;
-    
+    border: 2px solid white;
 }
 .section3{
     width: 100%;
@@ -162,7 +167,7 @@ hr{
     margin-inline:auto;
     position: relative;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     overflow: hidden;
     mask-image: linear-gradient(
@@ -227,6 +232,184 @@ hr{
 .item9{
     animation-delay: calc(30s / 9*(9 - 9)* -1);
 }
+.section3>hr{
+    width: 100%;
+    border: 2px solid white;
+}
+.sec4cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.section4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section4 > .skills {
+    user-select:text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.section4 > .skills > .cardCont {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    width: 80%;
+    align-items:center;
+}
+
+.card {
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 10px;
+    min-width: 350px;
+    border: 1px solid #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensures cards stretch to full container width */
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card > h2 {
+    padding: 0px 20px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card > p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.card > hr {
+    margin: 10px 0;
+    border: 1px solid #444;
+    width: 100%;
+}
+
+.boldy {
+    font-weight: bold;
+    color: #08a470;
+}
+
+.gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.gif > img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.certifications{
+    padding: 50px;
+}
+
+.certifications h2 {
+    text-align: left;   /* Align to the left */
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* This makes the cards responsive */
+    gap: 20px;
+    justify-content: center;
+}
+
+.cert-card {
+    background: rgba(255, 255, 255, 0.048);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /*Full width inside the grid cell*/
+    max-width: 1000px; /* Max width of each card */
+    min-width: 300px; /* Minimum width of each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #08a470;
+    position: relative;
+}
+
+.cert-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right bottom, #08a470,#03563b);
+    border-radius: 7px;
+}
+
+.cert-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.institute-name {
+    font-size: 1.1rem;
+    color: white;
+    font-weight:bold;
+}
+
+.cert-name {
+    font-size: 1.32rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.cert-description {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-bottom: 45px;
+    line-height: 1.4;
+}
+.cert-link {
+    color: #fff;
+    text-decoration: none;
+    width: 88%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background: linear-gradient(to right, rgb(7, 155, 105) 50%, rgb(12, 12, 12) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+.cert-link:hover{
+    background-position: left bottom;
+    border: 1px solid rgb(10, 188, 129);
+}
+
 @keyframes scrollLeft{
     to{
         left: -200px;
@@ -352,6 +535,9 @@ hr{
     }
     .scroll{
         margin-bottom: 10px;
+    }
+    .section4 {
+        flex-direction: column;
     }
 }
 @media(max-width:980px){

@@ -84,10 +84,7 @@ i:hover{
     line-height: 1;
     letter-spacing: 0.2mm;
 }
-.mid >.content > h1:hover{
-    -webkit-text-stroke: 0.5px #fff;
-    color: transparent;
-}
+
 .mid >.content> h3 {
     font-size: 20px;
     margin: 10px 0px;
@@ -134,12 +131,12 @@ button:hover{
     width: 500px;
     height: 500px;
     border-radius: 80px;
-    background: url(./hazem.jpg);
+    background: url(./images/Hazzem.jpg);
     background-size: cover;
     animation: glitch 3s infinite steps(1);
 }
 .imeg:hover{
-    border: 10px solid #fff;
+    border: 0px solid #fff;
 }
 .section2{
     user-select:text;
@@ -417,23 +414,23 @@ button:hover{
 }
 @keyframes glitch {
     0%, 100% {
-        background: url(./images/hazem.jpg);
+        background: url(./images/Hazzem.jpg);
         background-size: cover;
     } 
     91% {
-        background: url(./images/glitch-image-1728909759.png);
+        background: url(./images/hazem1.png);
         background-size: cover;
     } 
     93% {
-        background: url(./images/glitch-image-1728910165.png);
+        background: url(./images/hazem2.png);
         background-size: cover;
     } 
     95% {
-        background: url(./images/glitch-image-1728910168.png);
+        background: url(./images/hazem3.png);
         background-size: cover;
     } 
     97% {
-        background: url(./images/glitch-image-1728910172.png);
+        background: url(./images/hazem4.png);
         background-size: cover;
     } 
 }
